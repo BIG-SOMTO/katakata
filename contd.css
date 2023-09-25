@@ -1,0 +1,266 @@
+@import url('http://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;500;600;700;800;900&display+swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'poppings', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span{
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(34, 24, 49);
+}
+
+nav{
+    position: fixed ;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15)
+}
+nav img{
+    width: 110px;
+    cursor: pointer;
+   
+}
+nav .navigation ul{
+   display: flex;
+   justify-content: flex-end;
+}
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+nav .navigation ul li a:hover{
+    color: yellow;
+}
+
+/*home*/
+#home{
+ background-image:url(vadim-sherbakov-d6ebY-faOO0-unsplash.jpg);
+ width: 100%;
+ height: 100vh;
+ background-size: cover;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding-top: 40px;
+}
+ 
+#home h2{
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+#home p{
+    width: 50%;
+    color: white;
+    font-size: 1 rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-shadow: 2px 2px 4px black
+}
+#home .btn{
+     margin-top: 30px;
+
+}
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem ;
+    padding: 13px 35px ;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+#home a.blue{
+ color: lightblue;
+ background: rgb(21, 21, 100);
+ transition: 0.5s;
+}
+#home a.blue:hover{
+    color: bisque;
+    background-color: white;
+}
+#home a.yellow{
+    color: white;
+    background-color: yellow;
+    transition: 0.5s;
+   
+   }
+   #home a.yellow:hover{
+       color: bisque;
+       background-color: white;
+   }
+   
+/* features*/
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}   
+
+#features .fea-base{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+grid-gap: 1rem;
+margin-top: 50px;
+}
+
+#features .fea-box{
+    background-color: #f9f9ff;
+    text-align: start;
+}
+#features .fea-box i{
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+}
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(46, 46, 59);
+   
+}
+/*course*/
+#course{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+#course .course-box{
+    display: grid;
+grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+grid-gap: 1rem;
+margin-top: 50px;
+}
+#course .courses{
+   text-align: start;
+   background-color: antiquewhite;
+   height: 100%;
+   position: relative;
+
+}
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+#course .courses .details{
+    padding: 15px 15px 0 15px;
+}
+#course .courses .details i{
+    color: #fdc93b;
+   
+}
+#course .courses .cost{
+    background-color: rgb(74, 74, 136);
+    color: white;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+}
+/* registration*/
+#registration{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image:url(nick-morrison-FHnnjk1Yj7Y-unsplash.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8%;
+}
+#registration .reminder{
+    color: white
+}
+#registration .reminder h1{
+    color: white
+}
+#registration .reminder .time{
+    display: flex;
+    margin-top: 40px;
+}
+#registration .reminder .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px ;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+#registration .form{
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+#registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgba(84, 40, 241);
+    outline: none;
+}
+#registration .form a.yellow{
+    text-decoration: none;
+    font-size: 0.9rem ;
+    padding: 13px 35px ;
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: yellow;
+    transition: 0.5s;
+   
+   }
+   #registration .form a.yellow:hover{
+       color: bisque;
+       background-color: white;
+   }
